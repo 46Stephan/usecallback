@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #111;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -11,20 +10,20 @@ body {
 }
 
 .container {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: rgba(51, 51, 51, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 80%;
 }
 
 h1 {
   color: #fff;
+  font-size: 24px;
 }
 
 button {
-  background-color: hsla(272, 73%, 61%, 0.79);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -39,5 +38,15 @@ button + button {
 }
 
 button:hover {
-  background-color: #5700b3;
+  background-color: #5400b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
 }
